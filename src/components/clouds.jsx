@@ -1,17 +1,17 @@
 import React from "react";
 
-function Clouds() {
+function Clouds(props) {
   let cloudStyle = [];
 
   for (let i = 0; i < 7; i++) {
-    const randTop = Math.floor(Math.random() * 100) + 100;
+    const randTop = Math.floor(Math.random() * 100);
     const randLeft = Math.floor(Math.random() * 100);
-    const randHeight = Math.floor(Math.random() * 100) + 50;
+    const randHeight = Math.floor(Math.random() * 100) * props.layer + 100;
     cloudStyle[i] = {
       position: "absolute",
       height: randHeight + "px",
-      top: randTop + "%",
-      left: randLeft + "%",
+      top: randTop + "vh",
+      left: randLeft + "vw",
       zIndex: -i - 10,
     };
   }

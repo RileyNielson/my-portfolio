@@ -1,37 +1,49 @@
 body {
-  background: darkslategrey;
+  background: lightseagreen;
   overflow: hidden;
   margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App {
+  width: 100vw;
+  height: 100%;
 }
 
 #scrollContainer {
-  width: 100vh;
+  width: 100vw;
   position: absolute;
 }
 
 #container {
+  background: linear-gradient(white, rgb(43, 128, 173));
   position: absolute;
   display: grid;
   grid-template: 100vh 100vh 100vh 100vh 100vh/ 100vw;
   justify-content: center;
   align-items: center;
   top: 0;
-  z-index: 20;
+  z-index: -30;
 }
 
 #backgroundContainer1 {
+  top: 100vh;
   position: absolute;
   z-index: -20;
 }
 #backgroundContainer2 {
+  top: 100vh;
   position: absolute;
   z-index: -21;
 }
 #backgroundContainer3 {
+  top: 100vh;
   position: absolute;
   z-index: -22;
 }
 #backgroundContainer4 {
+  top: 100vh;
   position: absolute;
   z-index: -23;
 }
@@ -49,14 +61,14 @@ body {
 
 #nameContainer {
   height: 100vh;
-  width: 50%;
+  width: 49.5%;
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: right;
-  color: white;
+  color: black;
   z-index: 100;
-  background-color: rgba(58, 52, 52, 0.438);
+  /* background-color: rgba(58, 52, 52, 0.438); */
 }
 
 .infoContainer {
@@ -77,6 +89,25 @@ body {
   /* background-color: rgba(58, 52, 52, 0.438); */
 }
 
+.meImage {
+    grid-row: 1;
+    grid-column: 3;
+    justify-self: center;
+    align-self: center;
+    height: 50vh;
+    border: 20px white solid;
+    border-radius: 50%;
+}
+
+#greeting {
+    grid-row: 2;
+    grid-column: 2;
+    align-self: center;
+    justify-self:end;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
 .infoContent {
   grid-row: 3;
   grid-column: 3;
@@ -86,7 +117,7 @@ body {
 }
 
 p {
-  /* background-color: rgba(58, 52, 52, 0.438); */
+  background-color: rgba(58, 52, 52, 0.438);
 }
 
 .meDefinitions {

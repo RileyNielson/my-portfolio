@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <div id="nameContainer">
-        <h2 style={{marginRight: "2%"}}>Riley A. Nielson</h2>
+        <h2 style={{marginRight: "1%"}}>Riley A. Nielson</h2>
       </div>
       <div id="scrollContainer">
         <div id="container" style={itemGridStyle}>
@@ -22,6 +22,8 @@ function App() {
               id={index + 1}
               title={item.title}
               content={item.content}
+              imgSrc={item.imageSrc}
+              imgAlt={item.imageAlt}
             />
           ))}
         </div>
@@ -51,6 +53,7 @@ document.addEventListener("wheel", (event) => {
       "backgroundContainer4"
     );
     const delta = Math.sign(event.deltaY);
+    const scrollDuration = 600;
     counter += delta;
     console.log(counter);
     if (counter < 0) {
@@ -63,7 +66,7 @@ document.addEventListener("wheel", (event) => {
       const animated = container.animate(
         { transform: "translate(0%," + counter * -100 + "vh)" },
         {
-          duration: 500,
+          duration: scrollDuration,
           easing: "ease-in-out",
           iterations: 1,
           fill: "forwards",
@@ -74,7 +77,7 @@ document.addEventListener("wheel", (event) => {
           transform: "translate(0%, " + (counter * -100) / 2 + "vh)",
         },
         {
-          duration: 500,
+          duration: scrollDuration,
           easing: "ease-in-out",
           iterations: 1,
           fill: "forwards",
@@ -83,7 +86,7 @@ document.addEventListener("wheel", (event) => {
       backgroundContainer2.animate(
         { transform: "translate(0%, " + (counter * -100) / 5 + "vh)" },
         {
-          duration: 500,
+          duration: scrollDuration,
           easing: "ease-in-out",
           iterations: 1,
           fill: "forwards",
@@ -92,7 +95,7 @@ document.addEventListener("wheel", (event) => {
       backgroundContainer3.animate(
         { transform: "translate(0%, " + (counter * -100) / 10 + "vh)" },
         {
-          duration: 500,
+          duration: scrollDuration,
           easing: "ease-in-out",
           iterations: 1,
           fill: "forwards",
@@ -101,7 +104,7 @@ document.addEventListener("wheel", (event) => {
       backgroundContainer4.animate(
         { transform: "translate(0%, " + (counter * -100) / 20 + "%)" },
         {
-          duration: 500,
+          duration: scrollDuration,
           easing: "ease-in-out",
           iterations: 1,
           fill: "forwards",
