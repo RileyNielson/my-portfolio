@@ -10,7 +10,7 @@ const info = [
     key: 2,
     title: "A Developer",
     content:
-      "React, Node, JS, VBA, Python and a whole bunch of other things that take up space here.",
+      "Of Products/ Of People: React, Node, JS, VBA, Python and a whole bunch of other things that take up space here.",
     imageSrc: "",
     imageAlt: "",
   },

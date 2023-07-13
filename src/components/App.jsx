@@ -1,6 +1,8 @@
 import Info from "./Info.jsx";
 import info from "./info.js";
 import BackgroundImages from "./BackgroundImages.jsx";
+import Header from "./header.jsx";
+
 
 const numberOfItems = info.length;
 
@@ -11,8 +13,9 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <div id="nameContainer">
-        <h2 style={{marginRight: "1%"}}>Riley A. Nielson</h2>
+        <h2 style={{marginRight: "1%"}}>Riley Nielson</h2>
       </div>
       <div id="scrollContainer">
         <div id="container" style={itemGridStyle}>

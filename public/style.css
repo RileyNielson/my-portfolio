@@ -11,6 +11,49 @@ body {
   height: 100%;
 }
 
+#heading {
+  color: white;
+  background: linear-gradient(to right, rgb(80, 80, 80), rgb(43, 128, 173));
+  position: fixed;
+  height: 5vh;
+  width: 100vw;
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+
+#leftHeading {
+  width: fit-content;
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+}
+
+#rightHeading {
+  width: fit-content;
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+  gap: 20px;
+}
+
+#logoImg {
+  height: 60px;
+}
+
+.navItem {
+  font-size: 20px;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.navItem:hover {
+  color: grey;
+}
+
 #scrollContainer {
   width: 100vw;
   position: absolute;
@@ -66,7 +109,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: right;
-  color: black;
+  color: rgb(40, 40, 40);
   z-index: 100;
   /* background-color: rgba(58, 52, 52, 0.438); */
 }
@@ -90,22 +133,25 @@ body {
 }
 
 .meImage {
-    grid-row: 1;
-    grid-column: 3;
-    justify-self: center;
-    align-self: center;
-    height: 50vh;
-    border: 20px white solid;
-    border-radius: 50%;
+  grid-row: 1;
+  grid-column: 3;
+  justify-self: center;
+  align-self: center;
+  height: 50vh;
+  border: 20px white solid;
+  border-radius: 50%;
+  margin-left: 10%;
 }
 
 #greeting {
-    grid-row: 2;
-    grid-column: 2;
-    align-self: center;
-    justify-self:end;
-    margin-right: 100px;
-    margin-bottom: 50px;
+  width: 120px;
+  grid-row: 2;
+  grid-column: 2;
+  align-self: center;
+  justify-self: end;
+  margin-right: 80px;
+  margin-bottom: 50px;
+  color: rgb(40, 40, 40);
 }
 
 .infoContent {

@@ -6,7 +6,7 @@ function Info(props) {
   if (props.id === 1) {
     return (
       <div className="infoContainer" style={style}>
-        <div id="greeting">Hello there, I'm</div>
+        <div id="greeting">Hello there! I'm</div>
         <div className="infoHeading">
           <h2>{props.title}</h2>
           <img
