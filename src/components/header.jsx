@@ -8,10 +8,10 @@ function Header() {
         <div>VictorianSkies</div>
       </div>
       <div id="rightHeading">
+        <div className="navItem">Home</div>
         <div className="navItem">Projects</div>
         <div className="navItem">Skills</div>
-        <div className="navItem">About</div>
-        <div className="navItem">Contact</div>
+        <div className="navItem">Connect</div>
       </div>
     </div>
   );

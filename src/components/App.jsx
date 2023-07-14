@@ -44,6 +44,9 @@ document.addEventListener("wheel", (event) => {
     scrolling = true;
     const container = document.getElementById("container");
     const backgroundContainer = document.getElementById("backgroundContainer");
+    const backgroundContainer0 = document.getElementById(
+      "backgroundContainer0"
+    );
     const backgroundContainer1 = document.getElementById(
       "backgroundContainer1"
     );
@@ -52,9 +55,6 @@ document.addEventListener("wheel", (event) => {
     );
     const backgroundContainer3 = document.getElementById(
       "backgroundContainer3"
-    );
-    const backgroundContainer4 = document.getElementById(
-      "backgroundContainer4"
     );
     const delta = Math.sign(event.deltaY);
     const scrollDuration = 600;
@@ -87,7 +87,7 @@ document.addEventListener("wheel", (event) => {
           fill: "forwards",
         }
       );
-      backgroundContainer1.animate(
+      backgroundContainer0.animate(
         {
           transform: "translate(0%, " + (counter * -100) / 2 + "vh)",
         },
@@ -98,7 +98,7 @@ document.addEventListener("wheel", (event) => {
           fill: "forwards",
         }
       );
-      backgroundContainer2.animate(
+      backgroundContainer1.animate(
         { transform: "translate(0%, " + (counter * -100) / 4 + "vh)" },
         {
           duration: scrollDuration,
@@ -107,7 +107,7 @@ document.addEventListener("wheel", (event) => {
           fill: "forwards",
         }
       );
-      backgroundContainer3.animate(
+      backgroundContainer2.animate(
         { transform: "translate(0%, " + (counter * -100) / 6 + "vh)" },
         {
           duration: scrollDuration,
@@ -116,7 +116,7 @@ document.addEventListener("wheel", (event) => {
           fill: "forwards",
         }
       );
-      backgroundContainer4.animate(
+      backgroundContainer3.animate(
         { transform: "translate(0%, " + (counter * -100) / 8 + "%)" },
         {
           duration: scrollDuration,
