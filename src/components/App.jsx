@@ -3,7 +3,6 @@ import info from "./info.js";
 import BackgroundImages from "./BackgroundImages.jsx";
 import Header from "./header.jsx";
 
-
 const numberOfItems = info.length;
 
 function App() {
@@ -14,8 +13,10 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <div id="backgroundContainer"></div>
+      <BackgroundImages itemsCount={numberOfItems} />
       <div id="nameContainer">
-        <h2 style={{marginRight: "1%"}}>Riley Nielson</h2>
+        <h2 style={{ marginRight: "1%" }}>Riley Nielson</h2>
       </div>
       <div id="scrollContainer">
         <div id="container" style={itemGridStyle}>
@@ -30,7 +31,6 @@ function App() {
             />
           ))}
         </div>
-        <BackgroundImages itemsCount={numberOfItems} />
       </div>
     </div>
   );
@@ -43,6 +43,7 @@ document.addEventListener("wheel", (event) => {
   if (scrolling === false) {
     scrolling = true;
     const container = document.getElementById("container");
+    const backgroundContainer = document.getElementById("backgroundContainer");
     const backgroundContainer1 = document.getElementById(
       "backgroundContainer1"
     );
@@ -75,6 +76,17 @@ document.addEventListener("wheel", (event) => {
           fill: "forwards",
         }
       );
+      backgroundContainer.animate(
+        {
+          transform: "translate(0%, " + counter * -100 + "vh)",
+        },
+        {
+          duration: scrollDuration,
+          easing: "ease-in-out",
+          iterations: 1,
+          fill: "forwards",
+        }
+      );
       backgroundContainer1.animate(
         {
           transform: "translate(0%, " + (counter * -100) / 2 + "vh)",
@@ -87,7 +99,7 @@ document.addEventListener("wheel", (event) => {
         }
       );
       backgroundContainer2.animate(
-        { transform: "translate(0%, " + (counter * -100) / 5 + "vh)" },
+        { transform: "translate(0%, " + (counter * -100) / 4 + "vh)" },
         {
           duration: scrollDuration,
           easing: "ease-in-out",
@@ -96,7 +108,7 @@ document.addEventListener("wheel", (event) => {
         }
       );
       backgroundContainer3.animate(
-        { transform: "translate(0%, " + (counter * -100) / 10 + "vh)" },
+        { transform: "translate(0%, " + (counter * -100) / 6 + "vh)" },
         {
           duration: scrollDuration,
           easing: "ease-in-out",
@@ -105,7 +117,7 @@ document.addEventListener("wheel", (event) => {
         }
       );
       backgroundContainer4.animate(
-        { transform: "translate(0%, " + (counter * -100) / 20 + "%)" },
+        { transform: "translate(0%, " + (counter * -100) / 8 + "%)" },
         {
           duration: scrollDuration,
           easing: "ease-in-out",

@@ -8,15 +8,14 @@ const info = [
   },
   {
     key: 2,
-    title: "A Developer",
-    content:
-      "Of Products/ Of People: React, Node, JS, VBA, Python and a whole bunch of other things that take up space here.",
+    title: "Full Stack Developer",
+    content:"Providing quality front-end and back-end solutions that work effeciently while looking good.",
     imageSrc: "",
     imageAlt: "",
   },
   {
     key: 3,
-    title: "An Engineer",
+    title: "Accomplished Programmer",
     content:
       "How to keep a programmer in the shower forever. Show him the shampoo bottle instructions: Lather. Rinse. Repeat.",
     imageSrc: "",
@@ -24,7 +23,7 @@ const info = [
   },
   {
     key: 4,
-    title: "A Designer",
+    title: "Leader/Follower",
     content:
       "Q. Why did the programmer quit his job? A. Because he didn't get arrays.",
     imageSrc: "",

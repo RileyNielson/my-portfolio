@@ -1,5 +1,6 @@
 import React from "react";
 import Clouds from "./clouds";
+import Icons from "./icons";
 
 function BackgroundImages(props) {
   const layerCount = 4;
@@ -9,14 +10,19 @@ function BackgroundImages(props) {
   for (let i = 0; i < layerCount; i++) {
     backgroundGridStyle[i] = {
       height:
-        ((layerCount - 1 * (layerCount - 1 - i) + layerCount) / layerCount) *
+        ((layerCount - 1 * (layerCount - 1 - i)) / layerCount) *
           100 +
         "vh",
       width: "100vw",
     };
   }
 
-  const divWidth = { height: "100vh", width: "100vw" };
+  const divWidth = {
+    height: "100vh",
+    width: "100vw",
+    position: "absolute",
+    zIndex: -20,
+  };
 
   return (
     <div style={divWidth}>

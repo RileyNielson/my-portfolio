@@ -5,19 +5,19 @@ function Clouds(props) {
 
   for (let i = 0; i < 7; i++) {
     const randTop = Math.floor(Math.random() * 100);
-    const randLeft = Math.floor(Math.random() * 100);
+    const randLeft = Math.floor(Math.random() * 100 - 25);
     const randHeight = Math.floor(Math.random() * 100) * props.layer + 100;
     cloudStyle[i] = {
-      position: "absolute",
+      position: "relative",
       height: randHeight + "px",
-      top: randTop + "vh",
-      left: randLeft + "vw",
+      top: randTop + "%",
+      left: randLeft + "%",
       zIndex: -i - 10,
     };
   }
 
   return (
-    <div>
+    <div style={{ position:"absolute", zIndex: -20, height:"inherit"}}>
       <img src="./Images/Cloud0.png" alt="cloud" style={cloudStyle[0]} />
       <img src="./Images/Cloud1.png" alt="cloud" style={cloudStyle[1]} />
       <img src="./Images/Cloud2.png" alt="cloud" style={cloudStyle[2]} />
