@@ -26,7 +26,7 @@ const icons = [
   },
   {
     key: 6,
-    src: "",
+    src: "./images/blankImage.png",
     alt: "",
   },
   {
@@ -41,12 +41,12 @@ const icons = [
   },
   {
     key: 9,
-    src: "",
+    src: "./images/blankImage.png",
     alt: "",
   },
   {
     key: 10,
-    src: "",
+    src: "./images/blankImage.png",
     alt: "",
   },
   {

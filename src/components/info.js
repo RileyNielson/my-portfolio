@@ -8,14 +8,14 @@ const info = [
   },
   {
     key: 2,
-    title: "A Full Stack Developer",
-    content:"Providing quality front-end/back-end solutions. Your clients won't believe how you products can WORK SO WELL and LOOK SO GOOD!",
+    title: "Full Stack Developer",
+    content:"Providing quality front-end/back-end solutions. Your clients won't believe how YOUR PRODUCTS can WORK SO WELL and LOOK SO GOOD!",
     imageSrc: "",
     imageAlt: "",
   },
   {
     key: 3,
-    title: "An Accomplished Programmer",
+    title: "Accomplished Programmer",
     content:
       "How to keep a programmer in the shower forever. Show him the shampoo bottle instructions: Lather. Rinse. Repeat.",
     imageSrc: "",
@@ -23,7 +23,7 @@ const info = [
   },
   {
     key: 4,
-    title: "A Follower / A Leader",
+    title: "A Leader / A Follower",
     content:
       "Q. Why did the programmer quit his job? A. Because he didn't get arrays.",
     imageSrc: "",

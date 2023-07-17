@@ -99,7 +99,7 @@ document.addEventListener("wheel", (event) => {
         }
       );
       backgroundContainer1.animate(
-        { transform: "translate(0%, " + (counter * -100) / 4 + "vh)" },
+        { transform: "translate(0%, " + (counter * -100) / 3 + "vh)" },
         {
           duration: scrollDuration,
           easing: "ease-in-out",
@@ -108,7 +108,7 @@ document.addEventListener("wheel", (event) => {
         }
       );
       backgroundContainer2.animate(
-        { transform: "translate(0%, " + (counter * -100) / 6 + "vh)" },
+        { transform: "translate(0%, " + (counter * -100) / 4 + "vh)" },
         {
           duration: scrollDuration,
           easing: "ease-in-out",
@@ -117,7 +117,7 @@ document.addEventListener("wheel", (event) => {
         }
       );
       backgroundContainer3.animate(
-        { transform: "translate(0%, " + (counter * -100) / 8 + "%)" },
+        { transform: "translate(0%, " + (counter * -100) / 5 + "%)" },
         {
           duration: scrollDuration,
           easing: "ease-in-out",

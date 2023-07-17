@@ -6,6 +6,9 @@ function Info(props) {
   };
 
   const iconStyle = {
+    height: "100px",
+    width: "100%",
+    objectFit: "contain",
     position: "relative",
     alignSelf: "center",
     justifySelf: "center",
@@ -35,7 +38,6 @@ function Info(props) {
             <img
               src={item.src}
               alt={item.alt}
-              height={"100px"}
               draggable={false}
               style={iconStyle}
             />
