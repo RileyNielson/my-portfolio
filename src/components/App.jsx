@@ -16,7 +16,7 @@ function App() {
       <div id="backgroundContainer"></div>
       <BackgroundImages itemsCount={numberOfItems} />
       <div id="nameContainer">
-        <h2 style={{ marginRight: "1%" }}>Riley Nielson</h2>
+        <h2 style={{ marginRight: "2%" }}>Riley Nielson</h2>
       </div>
       <div id="scrollContainer">
         <div id="container" style={itemGridStyle}>
