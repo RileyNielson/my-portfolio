@@ -23,7 +23,7 @@ const info = [
   },
   {
     key: 4,
-    title: "A Leader / A Follower",
+    title: "A Leader",
     content:
       "Q. Why did the programmer quit his job? A. Because he didn't get arrays.",
     imageSrc: "",
