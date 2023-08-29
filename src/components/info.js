@@ -31,15 +31,8 @@ const info = [
   },
   {
     key: 5,
-    title: "Email Me!",
+    title: "Connections!",
     content: "Email: Rileyanielson@gmail.com",
-    imageSrc: "",
-    imageAlt: "",
-  },
-  {
-    key: 6,
-    title: "Hope to hear from you soon!",
-    content: "",
     imageSrc: "",
     imageAlt: "",
   },
