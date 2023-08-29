@@ -13,7 +13,7 @@ function Info(props) {
     alignSelf: "center",
     justifySelf: "center",
   };
-
+ 
   if (props.id === 1) {
     return (
       <div className="infoContainer" style={style}>

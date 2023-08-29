@@ -31,7 +31,7 @@ const info = [
   },
   {
     key: 5,
-    title: "Connections!",
+    title: "Connect!",
     content: "Email: Rileyanielson@gmail.com",
     imageSrc: "",
     imageAlt: "",
