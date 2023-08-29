@@ -40,7 +40,7 @@ var scrolling = false;
 var counter = 0;
 
 
-const scrollFunction = function (event) {
+function scrollFunction (delta) {
   if (scrolling === false) {
     scrolling = true;
     const container = document.getElementById("container");
@@ -57,7 +57,6 @@ const scrollFunction = function (event) {
     const backgroundContainer3 = document.getElementById(
       "backgroundContainer3"
     );
-    const delta = Math.sign(event.deltaY);
     const scrollDuration = 600;
     counter += delta;
     console.log(counter);
@@ -133,8 +132,71 @@ const scrollFunction = function (event) {
   }
 };
 
+function wheelScroll(event) {
+  const delta = Math.sign(event.deltaY);
+  scrollFunction(delta);
+}
 
-document.addEventListener("wheel", scrollFunction, false);
-document.addEventListener("touchmove", scrollFunction, false);
+
+document.addEventListener("wheel", wheelScroll, false);
+
+
+document.addEventListener("touchstart", startTouch, false);
+document.addEventListener("touchmove", moveTouch, false);
+ 
+// Swipe Up / Down / Left / Right
+var initialX = null;
+var initialY = null;
+ 
+function startTouch(e) {
+  initialX = e.touches[0].clientX;
+  initialY = e.touches[0].clientY;
+};
+ 
+function moveTouch(e) {
+  if (initialX === null) {
+    return;
+  }
+ 
+  if (initialY === null) {
+    return;
+  }
+ 
+  var currentX = e.touches[0].clientX;
+  var currentY = e.touches[0].clientY;
+ 
+  var diffX = initialX - currentX;
+  var diffY = initialY - currentY;
+ 
+  if (Math.abs(diffX) > Math.abs(diffY)) {
+    // sliding horizontally
+    if (diffX > 0) {
+      // swiped left
+      console.log("swiped left");
+    } else {
+      // swiped right
+      console.log("swiped right");
+    }  
+  } else {
+    // sliding vertically
+    if (diffY > 0) {
+      // swiped up
+      scrollFunction(1)
+      console.log("swiped up");
+    } else {
+      scrollFunction(-1)
+      // swiped down
+      console.log("swiped down");
+    }  
+  }
+ 
+  initialX = null;
+  initialY = null;
+   
+  e.preventDefault();
+};
+
+
+
 
 export default App;
