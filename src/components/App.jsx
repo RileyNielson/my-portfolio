@@ -39,7 +39,11 @@ function App() {
 var scrolling = false;
 var counter = 0;
 
-document.addEventListener("wheel", (event) => {
+document.addEventListener("wheel", scrollFunction, false);
+document.addEventListener("touchmove", scrollFunction, false);
+
+
+const scrollFunction = function (event) {
   if (scrolling === false) {
     scrolling = true;
     const container = document.getElementById("container");
