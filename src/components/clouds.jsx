@@ -18,7 +18,7 @@ function Clouds(props) {
 
   return (
     <div style={{ position:"absolute", zIndex: -20, height:"inherit"}}>
-      <img src="/Images/Cloud0.png" alt="cloud" style={cloudStyle[0]} />
+      <img src="./Images/Cloud0.png" alt="cloud" style={cloudStyle[0]} />
       <img src="./Images/Cloud1.png" alt="cloud" style={cloudStyle[1]} />
       <img src="./Images/Cloud2.png" alt="cloud" style={cloudStyle[2]} />
       <img src="./Images/Cloud3.png" alt="cloud" style={cloudStyle[3]} />

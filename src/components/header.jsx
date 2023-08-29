@@ -4,7 +4,7 @@ function Header() {
   return (
     <div id="heading">
       <div id="leftHeading">
-        <img id="logoImg" src="./images/VictorianSkiesLogo.png" alt="logo" />
+        <img id="logoImg" src="./Images/VictorianSkiesLogo.png" alt="logo" />
         <div>VictorianSkies</div>
       </div>
       <div id="rightHeading">
