@@ -5,7 +5,7 @@ function Header() {
     <div id="heading">
       <div id="leftHeading">
         <img id="logoImg" src="./Images/VictorianSkiesLogo.png" alt="logo" />
-        <div>VictorianSkies</div>
+        <div>Riley's Dev Portfolio</div>
       </div>
       <div id="rightHeading">
         <div className="navItem">Home</div>
