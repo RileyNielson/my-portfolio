@@ -19,7 +19,6 @@ p {
 #heading {
   font-family: 'Montserrat', sans-serif;
   color: white;
-  /* background: linear-gradient(to right, rgb(80, 80, 80), rgb(43, 128, 173)); */
   position: fixed;
   height: 5vh;
   width: 100vw;
