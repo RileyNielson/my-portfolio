@@ -42,7 +42,6 @@ var counter = 0;
 document.addEventListener("wheel", scrollFunction, false);
 document.addEventListener("touchmove", scrollFunction, false);
 
-
 const scrollFunction = function (event) {
   if (scrolling === false) {
     scrolling = true;
@@ -134,6 +133,6 @@ const scrollFunction = function (event) {
       };
     }
   }
-});
+};
 
 export default App;
