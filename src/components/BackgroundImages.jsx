@@ -29,7 +29,7 @@ function BackgroundImages(props) {
         return(<div id={item} style={backgroundGridStyle[index]}>
           <Clouds layer={index} />
         </div>)
-      })};
+      })}
     </div>
   );
 }

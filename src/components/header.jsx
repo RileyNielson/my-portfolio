@@ -3,10 +3,10 @@ import React from "react";
 function Header() {
   return (
     <div id="heading">
-      <div id="leftHeading">
+      {/* <div id="leftHeading">
         <img id="logoImg" src="./Images/VictorianSkiesLogo.png" alt="logo" />
         <div>Riley's Dev Portfolio</div>
-      </div>
+      </div> */}
       <div id="rightHeading">
         <div className="navItem">Home</div>
         <div className="navItem">Projects</div>
