@@ -8,14 +8,14 @@ const info = [
   },
   {
     key: 2,
-    title: "Full Stack Development",
+    title: "Full Stack Deployment",
     content:"",
     imageSrc: "",
     imageAlt: "",
   },
   {
     key: 3,
-    title: "User Driven Solutions",
+    title: "User Focused Solutions",
     content: "",
     imageSrc: "",
     imageAlt: "",

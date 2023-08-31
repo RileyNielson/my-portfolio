@@ -35,11 +35,6 @@ const icons = [
     alt: "Jquery logo and wordmark",
   },
   {
-    key: 8,
-    src: "https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg",
-    alt: "",
-  },
-  {
     key: 9,
     src: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
     alt: "",

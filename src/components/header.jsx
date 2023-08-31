@@ -9,8 +9,8 @@ function Header() {
       </div> */}
       <div id="rightHeading">
         <div className="navItem">Home</div>
-        <div className="navItem">Projects</div>
         <div className="navItem">Skills</div>
+        <div className="navItem">Projects</div>
         <div className="navItem">Connect</div>
       </div>
     </div>

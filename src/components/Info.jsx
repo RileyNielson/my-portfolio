@@ -13,6 +13,7 @@ function Info(props) {
         <div className="infoHeading">
           <img className="meImage" src={props.imgSrc} alt={props.imgAlt} />
         </div>
+        <div id="greeting2">A web developer</div>
       </div>
     );
   } else if (props.id === 2) {
@@ -43,7 +44,7 @@ function Info(props) {
           <h2>{props.title}</h2>
         </div>
         <div id="projectBox">
-          {projects.map((item) => {
+          {projects.map((item, index) => {
             return (
               <a
                 href={item.href}
@@ -52,7 +53,7 @@ function Info(props) {
                 rel="noopener noreferrer"
               >
                 <img
-                  className="projImg"
+                  className={"projImg" + index}
                   src={item.src}
                   alt={item.alt}
                   draggable={false}
