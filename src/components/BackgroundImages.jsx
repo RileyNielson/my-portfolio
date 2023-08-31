@@ -19,6 +19,7 @@ function BackgroundImages(props) {
   const divWidth = {
     height: "100vh",
     width: "100vw",
+    overflow: "hidden",
     position: "absolute",
     zIndex: -20,
   };

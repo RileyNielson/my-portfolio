@@ -26,33 +26,23 @@ const icons = [
   },
   {
     key: 6,
-    src: "./Images/blankImage.png",
-    alt: "",
-  },
-  {
-    key: 7,
     src: "https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg",
     alt: "Git logo and wordmark",
   },
   {
-    key: 8,
+    key: 7,
     src: "https://www.vectorlogo.zone/logos/jquery/jquery-horizontal.svg",
     alt: "Jquery logo and wordmark",
   },
   {
+    key: 8,
+    src: "https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg",
+    alt: "",
+  },
+  {
     key: 9,
-    src: "./Images/blankImage.png",
+    src: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
     alt: "",
-  },
-  {
-    key: 10,
-    src: "./Images/blankImage.png",
-    alt: "",
-  },
-  {
-    key: 11,
-    src: "https://www.vectorlogo.zone/logos/javascript/javascript-horizontal.svg",
-    alt: "Javascript logo and wordmark",
   },
 ];
 
