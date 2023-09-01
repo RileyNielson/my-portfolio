@@ -137,9 +137,7 @@ function wheelScroll(event) {
   scrollFunction(delta);
 }
 
-
 document.addEventListener("wheel", wheelScroll, false);
-
 
 document.addEventListener("touchstart", startTouch, false);
 document.addEventListener("touchmove", moveTouch, false);
