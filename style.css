@@ -221,7 +221,7 @@ p {
 
 .projImg2 {
   width: 45%; 
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .projImg3 {
