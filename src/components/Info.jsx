@@ -13,7 +13,7 @@ function Info(props) {
         <div className="infoHeading">
           <img className="meImage" src={props.imgSrc} alt={props.imgAlt} />
         </div>
-        <div id="greeting2">A web developer</div>
+        <div id="greeting2">A software developer</div>
       </div>
     );
   } else if (props.id === 2) {
