@@ -1,3 +1,5 @@
+import Attitude from "./attitude";
+import Connect from "./connect";
 import icons from "./icons";
 import projects from "./projects";
 
@@ -64,14 +66,57 @@ function Info(props) {
         </div>
       </div>
     );
-  } else {
+  } else if (props.id === 4) {
     return (
-      <div className="otherContainer" style={style}>
-        <div className="otherHeading">
+      <div className="imgContainer" style={style}>
+        <div className="imgHeading">
           <h2>{props.title}</h2>
         </div>
-        <div className="infoContent">
-          <p>{props.content}</p>
+        <div id="projectBox">
+          {Attitude.map((item, index) => {
+            return (
+              <a
+                href={item.href}
+                className="imgbox"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className={"projImg" + index}
+                  src={item.src}
+                  alt={item.alt}
+                  draggable={false}
+                />
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    );
+  } else {
+    return (
+      <div className="imgContainer" style={style}>
+        <div className="imgHeading">
+          <h2>{props.title}</h2>
+        </div>
+        <div id="mainAttBox">
+          {Connect.map((item, index) => {
+            return (
+              <a
+                href={item.href}
+                className="attBox"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className={"attImg"}
+                  src={item.src}
+                  alt={item.alt}
+                  draggable={false}
+                />
+              </a>
+            );
+          })}
         </div>
       </div>
     );

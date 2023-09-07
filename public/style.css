@@ -293,6 +293,30 @@ p {
   text-align: center;
 }
 
+#mainAttBox {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+flex-wrap: wrap;
+}
+
+.attBox {
+  width: 33vw;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attImg {
+    width: 35%; 
+    object-fit: contain;
+    filter: drop-shadow(-2px 4px 4px rgb(80, 80, 80))
+}
+
 @media screen and (min-width: 768px) {
   #heading {
     font-size: 25px;
