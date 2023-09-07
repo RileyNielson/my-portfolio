@@ -23,7 +23,7 @@ p {
   height: 5vh;
   width: 100vw;
   /* border-bottom: 2px solid white; */
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   font-size: 4vw;
@@ -126,6 +126,30 @@ p {
   font-size: 30px;
 }
 
+#greeting {
+  width: auto;
+  font-size: 20px;
+  grid-row: 1;
+  grid-column: 1/3;
+  align-self: center;
+  justify-self: flex-end;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  color: rgb(40, 40, 40);
+}
+
+#greeting2 {
+  width: auto;
+  font-size: 20px;
+  grid-row: 1;
+  grid-column: 2/5;
+  align-self: flex-end;
+  justify-self: flex-start;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  color: rgb(40, 40, 40);
+}
+
 .infoContainer {
   height: 100%;
   width: 100vw;
@@ -187,6 +211,7 @@ p {
   margin: 0;
   font-size: 20px;
   color: rgb(65, 65, 65);
+  text-align: center;
 }
 
 #projectBox {
@@ -197,8 +222,8 @@ p {
 .imgbox {
   display: flex;
   justify-content: center;
-  height: 140px;
-  width: 140px;
+  height: 120px;
+  width: 120px;
   border: 2px solid grey;
   border-radius: 10px;
   background-color: rgb(56, 56, 56);
@@ -207,28 +232,27 @@ p {
 }
 
 .projImg0 {
-  width: 100%; 
+  width: 100%;
   object-fit: cover;
 }
 
 .projImg1 {
-  width: 35%; 
+  width: 55%;
   object-fit: contain;
   filter: drop-shadow(-2px 4px 4px rgb(4, 150, 255))
-  drop-shadow(-2px -2px 4px rgb(255, 188, 66))
-  drop-shadow(2px 2px 4px rgb(216, 17, 89));
+    drop-shadow(-2px -2px 4px rgb(255, 188, 66))
+    drop-shadow(2px 2px 4px rgb(216, 17, 89));
 }
 
 .projImg2 {
-  width: 45%; 
+  height: 95%;
   object-fit: contain;
 }
 
 .projImg3 {
-  width: 100%; 
+  width: 100%;
   object-fit: contain;
 }
-
 
 .otherContainer {
   height: 100%;
@@ -259,30 +283,6 @@ p {
   border-radius: 50%;
 }
 
-#greeting {
-  width: auto;
-  font-size: 20px;
-  grid-row: 1;
-  grid-column: 1/3;
-  align-self: center;
-  justify-self: flex-end;
-  margin-right: 20px;
-  margin-bottom: 50px;
-  color: rgb(40, 40, 40);
-}
-
-#greeting2 {
-  width: auto;
-  font-size: 20px;
-  grid-row: 1;
-  grid-column: 3/5;
-  align-self: flex-end;
-  justify-self: flex-start;
-  margin-left: 10px;
-  margin-bottom: 30px;
-  color: rgb(40, 40, 40);
-}
-
 .infoContent {
   grid-row: 2;
   grid-column: 1/4;
@@ -293,17 +293,48 @@ p {
   text-align: center;
 }
 
-#mainAttBox {
-  position: absolute;
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-flex-wrap: wrap;
+#attSlides{
+  height: 50%;
+  overflow: hidden;
+  max-width: 100vw;
 }
 
-.attBox {
+#slideSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+#attBox {
+  display: inline-block;
+  white-space: pre-wrap;
+  width: 100vw;
+  height: fit-content;
+  color: rgb(56, 56, 56);
+}
+
+#attBox h3 {
+  margin: 50px 30px;
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+#attBox h4 {
+  margin-right: 50px;
+  text-align: right;
+}
+
+#mainConnBox {
+  position: absolute;
+  width: 100vw;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.connBox0 {
   width: 33vw;
   border-radius: 5px;
   display: flex;
@@ -311,10 +342,26 @@ flex-wrap: wrap;
   align-items: center;
 }
 
-.attImg {
-    width: 35%; 
-    object-fit: contain;
-    filter: drop-shadow(-2px 4px 4px rgb(80, 80, 80))
+.connBox1 {
+  width: 33vw;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connBox2 {
+  width: 33vw;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connImg {
+  width: 100px;
+  object-fit: contain;
+  filter: drop-shadow(-2px 4px 4px rgb(80, 80, 80));
 }
 
 @media screen and (min-width: 768px) {
@@ -406,7 +453,7 @@ flex-wrap: wrap;
     top: 0;
     z-index: 3;
   }
-  
+
   .imgHeading {
     grid-row: 2;
     grid-column: 3/5;
@@ -439,7 +486,7 @@ flex-wrap: wrap;
     top: 0;
     z-index: 3;
   }
-  
+
   .otherHeading {
     grid-row: 2;
     grid-column: 3/5;
@@ -449,6 +496,29 @@ flex-wrap: wrap;
     margin-top: 10px;
     font-size: 20px;
     color: rgb(65, 65, 65);
+  }
+
+  #mainConnBox {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .connBox0 {
+    width: 100vw;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .connImg {
+    width: 200px;
   }
 
   p {

@@ -1,12 +1,28 @@
+import React from "react";
 import Attitude from "./attitude";
 import Connect from "./connect";
 import icons from "./icons";
 import projects from "./projects";
 
+
 function Info(props) {
+  const [index, setIndex] = React.useState(0);
+
   const style = {
     gridRow: props.itemsCount,
   };
+
+  React.useEffect(() => {
+    setTimeout(
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === Attitude.length - 1 ? 0 : prevIndex + 1
+        ),
+      5000
+    );
+
+    return () => {};
+  }, [index]);
 
   if (props.id === 1) {
     return (
@@ -72,24 +88,20 @@ function Info(props) {
         <div className="imgHeading">
           <h2>{props.title}</h2>
         </div>
-        <div id="projectBox">
-          {Attitude.map((item, index) => {
-            return (
-              <a
-                href={item.href}
-                className="imgbox"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className={"projImg" + index}
-                  src={item.src}
-                  alt={item.alt}
-                  draggable={false}
-                />
-              </a>
-            );
-          })}
+        <div id="attSlides">
+          <div
+            id="slideSlider"
+            style={{ transform: `translate3d(${-index * 100}vw, 0, 0)` }}
+          >
+            {Attitude.map((item, index) => {
+              return (
+                <div id="attBox">
+                  <h3>{item.text}</h3>
+                  <h4>-{item.source}</h4>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     );
@@ -99,17 +111,17 @@ function Info(props) {
         <div className="imgHeading">
           <h2>{props.title}</h2>
         </div>
-        <div id="mainAttBox">
+        <div id="mainConnBox">
           {Connect.map((item, index) => {
             return (
               <a
                 href={item.href}
-                className="attBox"
+                className={"connBox" + index}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  className={"attImg"}
+                  className={"connImg"}
                   src={item.src}
                   alt={item.alt}
                   draggable={false}
