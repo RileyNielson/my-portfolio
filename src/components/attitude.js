@@ -27,7 +27,7 @@ const Attitude = [
   {
     key: 5,
     text: "The harder I work, the luckier I get.",
-    source: "The harder I work, the luckier I get.",
+    source: "Samuel Goldwyn",
   },
 ];
 

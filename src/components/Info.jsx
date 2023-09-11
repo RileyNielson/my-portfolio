@@ -4,7 +4,6 @@ import Connect from "./connect";
 import icons from "./icons";
 import projects from "./projects";
 
-
 function Info(props) {
   const [index, setIndex] = React.useState(0);
 
@@ -13,13 +12,15 @@ function Info(props) {
   };
 
   React.useEffect(() => {
-    setTimeout(
-      () =>
-        setIndex((prevIndex) =>
-          prevIndex === Attitude.length - 1 ? 0 : prevIndex + 1
-        ),
-      5000
-    );
+    if (window.innerWidth < 768) {
+      setTimeout(
+        () =>
+          setIndex((prevIndex) =>
+            prevIndex === Attitude.length - 1 ? 0 : prevIndex + 1
+          ),
+        5000
+      );
+    }
 
     return () => {};
   }, [index]);
@@ -93,7 +94,7 @@ function Info(props) {
             id="slideSlider"
             style={{ transform: `translate3d(${-index * 100}vw, 0, 0)` }}
           >
-            {Attitude.map((item, index) => {
+            {Attitude.map((item) => {
               return (
                 <div id="attBox">
                   <h3>{item.text}</h3>

@@ -293,7 +293,7 @@ p {
   text-align: center;
 }
 
-#attSlides{
+#attSlides {
   height: 50%;
   overflow: hidden;
   max-width: 100vw;
@@ -527,6 +527,31 @@ p {
 
   .meDefinitions {
     list-style-type: none;
+  }
+
+  #attSlides {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #slideSlider {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform: none;
+  }
+
+  #attBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    height: 100%;
+    color: rgb(56, 56, 56);
   }
 
   @keyframes move0 {
