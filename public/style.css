@@ -378,7 +378,7 @@ p {
   filter: drop-shadow(-2px 4px 4px rgb(80, 80, 80));
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 660px) {
   #heading {
     font-size: 25px;
   }
