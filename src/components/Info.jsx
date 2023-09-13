@@ -37,23 +37,22 @@ function Info(props) {
     );
   } else if (props.id === 2) {
     return (
-      <div className="iconContainer" style={style}>
-        <div className="iconHeading">
+      <div className="imgContainer" style={style}>
+        <div className="imgHeading">
           <h2>{props.title}</h2>
         </div>
-        <div className="infoContent">
-          <p>{props.content}</p>
+        <div id="iconContainer">
+          {icons.map((item) => {
+            return (
+              <img
+                className="iconImg"
+                src={item.src}
+                alt={item.alt}
+                draggable={false}
+              />
+            );
+          })}
         </div>
-        {icons.map((item) => {
-          return (
-            <img
-              className="iconImg"
-              src={item.src}
-              alt={item.alt}
-              draggable={false}
-            />
-          );
-        })}
       </div>
     );
   } else if (props.id === 3) {
