@@ -12,7 +12,7 @@ function Info(props) {
   };
 
   React.useEffect(() => {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 660) {
       setTimeout(
         () =>
           setIndex((prevIndex) =>
