@@ -115,39 +115,43 @@ p {
 }
 
 #nameContainer {
-  height: 17vh;
-  width: 100%;
+  top: 9vh;
+  width: 100vw;
   position: fixed;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   color: rgb(65, 65, 65);
   z-index: -1;
-  font-size: 30px;
+  font-size: 6vw;
+  text-align: center;
+}
+
+#nameContainer h2{
+  margin: 0;
 }
 
 #greeting {
   width: auto;
-  font-size: 20px;
-  grid-row: 1;
-  grid-column: 1/3;
-  align-self: center;
-  justify-self: flex-end;
+  font-size: 5vw;
+  position: absolute;
+  top: 6vh;
+  right: 50%;
   margin-right: 20px;
-  margin-bottom: 50px;
   color: rgb(40, 40, 40);
+  white-space: nowrap;
 }
 
 #greeting2 {
   width: auto;
-  font-size: 20px;
-  grid-row: 1;
-  grid-column: 2/5;
-  align-self: flex-end;
-  justify-self: flex-start;
-  margin-left: 50px;
-  margin-bottom: 20px;
+  font-size: 5vw;
+  position: absolute;
+  top: 15vh;
+  left: 40%;
+  margin-left: 10px;
   color: rgb(40, 40, 40);
+
+  white-space: nowrap;
 }
 
 .infoContainer {
@@ -187,9 +191,15 @@ p {
   color: rgb(65, 65, 65);
 }
 
+#iconContainer {
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .iconImg {
-  width: 80%;
-  max-width: 240px;
+  width: 30%;
   justify-self: center;
   align-self: center;
   position: relative;
@@ -203,54 +213,57 @@ p {
   flex-direction: column;
   align-items: center;
   position: relative;
-  top: 110px;
+  top: 16vh;
   z-index: 3;
 }
 
 .imgHeading {
   margin: 0;
-  font-size: 20px;
+  font-size: 4.5vw;
   color: rgb(65, 65, 65);
   text-align: center;
 }
 
 #projectBox {
-  display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .imgbox {
   display: flex;
   justify-content: center;
-  height: 120px;
-  width: 120px;
+  align-items: center;
+  height: 25%;
+  width: 70%;
   border: 2px solid grey;
   border-radius: 10px;
   background-color: rgb(56, 56, 56);
-  margin: 10px;
-  padding: 10px;
+  margin: 5%;
 }
 
 .projImg0 {
-  width: 100%;
+  width: 60%;
   object-fit: cover;
 }
 
 .projImg1 {
-  width: 55%;
-  object-fit: contain;
-  filter: drop-shadow(-2px 4px 4px rgb(4, 150, 255))
-    drop-shadow(-2px -2px 4px rgb(255, 188, 66))
-    drop-shadow(2px 2px 4px rgb(216, 17, 89));
+  height: 60%;
+  object-fit: cover;
+  filter: drop-shadow(-1px 1px 2px rgb(4, 150, 255))
+    drop-shadow(-1px -1px 2px rgb(255, 188, 66))
+    drop-shadow(1px 1px 2px rgb(216, 17, 89));
 }
 
 .projImg2 {
-  height: 95%;
+  height: 100%;
   object-fit: contain;
 }
 
 .projImg3 {
-  width: 100%;
+  width: 90%;
   object-fit: contain;
 }
 
@@ -294,12 +307,13 @@ p {
 }
 
 #attSlides {
-  height: 50%;
+  height: 80%;
   overflow: hidden;
   max-width: 100vw;
 }
 
 #slideSlider {
+  height: 100%;
   white-space: nowrap;
   transition: ease 1000ms;
 }
@@ -308,7 +322,7 @@ p {
   display: inline-block;
   white-space: pre-wrap;
   width: 100vw;
-  height: fit-content;
+  height: 100%;
   color: rgb(56, 56, 56);
 }
 
