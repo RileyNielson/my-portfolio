@@ -485,6 +485,7 @@ p {
 
   .iconImg {
     width: 20%;
+    max-height: 150px;
   }
 
   .infoContent {
