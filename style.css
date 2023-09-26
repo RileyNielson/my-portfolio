@@ -233,6 +233,7 @@ p {
 
 .imgbox {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 25%;
@@ -264,6 +265,10 @@ p {
 .projImg3 {
   width: 90%;
   object-fit: contain;
+}
+
+.imgText {
+  color: white;
 }
 
 .otherContainer {
