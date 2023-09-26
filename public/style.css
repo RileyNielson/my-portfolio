@@ -493,6 +493,7 @@ p {
   .iconImg {
     width: 20%;
     max-height: 150px;
+    object-fit: contain;
   }
 
   .infoContent {
@@ -542,9 +543,9 @@ p {
     width: 30%;
   }
 
-  .projImg0 {
+  /* .projImg0 {
     width: 120%;
-  }
+  } */
 
   .otherContainer {
     height: 100%;
