@@ -75,7 +75,7 @@ function Info(props) {
                   src={item.src}
                   alt={item.alt}
                   draggable={false}
-                />{item.text}
+                /><p className="imgText">{item.text}</p>
               </a>
             );
           })}
