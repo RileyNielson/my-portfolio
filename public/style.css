@@ -245,7 +245,7 @@ p {
 }
 
 .projImg0 {
-  width: 60%;
+  height: 60%;
   object-fit: cover;
 }
 
@@ -258,17 +258,18 @@ p {
 }
 
 .projImg2 {
-  height: 100%;
+  height: 60%;
   object-fit: contain;
 }
 
 .projImg3 {
-  width: 90%;
+  height: 60%;
   object-fit: contain;
 }
 
 .imgText {
   color: white;
+  text-decoration: none;
 }
 
 .otherContainer {
